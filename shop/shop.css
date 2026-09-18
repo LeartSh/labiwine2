@@ -1,0 +1,731 @@
+*{
+    text-decoration: none;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+body{
+    background-image: url(/Images/klara-kulikova-CPMZguYURMw-unsplash.jpg);
+    background-position: top;
+    background-size: 100% 100%;
+    background-size: cover;
+    height: 100vh;
+    background-attachment:scroll;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    display: block;
+    overflow-x: hidden;
+    font-family: "Truculenta", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+    text-decoration: none;
+    text-transform: none;
+    overflow-x: hidden;
+}
+
+.navbar{
+    width: 100%;
+    background: #121212;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: none;
+    backdrop-filter: none;
+    transition: none;
+}
+
+.navbar ul {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.navbar-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 36px;
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    flex: 0 1 auto;
+}
+
+.navbar-menu li {
+    display: flex;
+    align-items: center;
+    height: 100px;
+    position: relative;
+    left: 300px;    
+}
+
+.navbar-menu a, .dropdown-button {
+    font-family: inherit;
+    font-weight: 100;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 16px;
+    color: white;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 0 8px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    transition: color 0.2s;
+    text-decoration: none;
+}
+
+.navbar-menu a:hover, .dropdown-button:hover {
+    color: #9e8862;
+}
+
+.navbar-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    padding: 0 32px;
+    box-sizing: border-box;
+}
+
+#li1, #li2, #li3, #li4 {
+    margin-left: 0 !important;
+    margin-top: 0 !important;
+    font-family: "Truculenta", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+}
+
+#li1:hover{
+    color:#9e8862;
+}
+
+#li2:hover{
+    color:#9e8862;
+}
+
+#li3:hover{
+    color:#9e8862;
+}
+
+#li4:hover{
+    color:#9e8862;
+}
+
+.navbar-icons {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    gap: 16px;
+}
+
+#icon1, #icon2, #icon3 {
+    position: static;
+    margin: 0 8px;
+    width: 35px;
+    height: 35px;
+    object-fit: cover;
+    vertical-align: right;
+    display: inline-block;
+}
+/*Logo Labi wine*/
+#image1{
+    height: 60px;
+    max-height: 70px;
+    width: auto;
+    object-fit: contain;
+    margin-right: 24px;
+    display: block;
+}  
+
+/* Hamburger */
+.navbar-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 1100;
+    padding: 0;
+    margin-left: auto;
+    height: 40px;
+    width: 40px;
+}
+
+.hamburger {
+  display: none;
+  width: 46px;
+  height: 30px;
+  flex-direction: column;
+  justify-content: space-between;
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-left: auto;
+  z-index: 1001;
+}
+
+.hamburger span {
+  height: 4px;
+  width: 100%;
+  background-color: #2652c0;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+  display: block;
+}
+/*Dropdown Menu from Wineyards*/
+.dropdown {
+    position: relative;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.dropdown-button {
+    font-size: 20px !important;
+    font-family: inherit!important;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    background: none;
+    border: none;
+    color: white;
+    padding: 0 8px;
+    margin: 0;
+    box-shadow: none;
+    line-height: 100px;
+    vertical-align: middle;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #121212;
+    min-width: 160px;
+    z-index: 2000;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    border-radius: 4px;
+    padding: 0;
+    font-family: inherit !important;
+    font-weight: 100;
+}
+
+.dropdown-content li {
+    margin: 0;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    font-family: 'Trunculenta', sans-serif;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 0 16px;
+    display: block;
+    border-radius: 0;
+    font-size: 18px;
+    height: 50px;
+    line-height: 50px;
+}
+
+.dropdown-content a:hover, .dropdown-content a:focus {
+    color: #9e8862;
+    background: none;
+}
+
+.dropdown-arrow {
+    font-size: 12px;
+    margin-left: 2px;
+}
+
+.dropdown-content.show {
+    display: block;
+}
+
+.grid-container {
+    width: 100%;
+    max-width: 1400px;
+    margin: 120px auto 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));    
+    gap: 20px;
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+.wine-card{
+    background-color: #121212;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    transition: transform 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.wine-card:hover {
+  transform: translateY(-5px);
+}
+
+.image-section {
+  width: 100%;
+  height: 250px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.image-section img{
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+}
+.info-section {
+    padding: 15px;
+    background-color: transparent;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr; 
+    align-items: center;
+    gap: 30px; 
+    width: 100%;
+    margin-top: 15px;
+}
+
+.item-left {
+    text-align: right; /* Year text pushes toward the button */
+}
+
+.item-right {
+    text-align: left; /* Price text pushes toward the button */
+}
+
+.order-btn {
+    background-color: #121212;
+    color: #9e8862;
+    border-color: #9e8862;
+    padding: 8px 15px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 2px;
+    /* Ensures the button stays the same size */
+    white-space: nowrap; 
+}
+
+.order-btn:hover{
+    background-color: #fff;
+    color: #9e8862;
+    border-color: #121212;
+}
+
+.info-group {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+}
+
+.info-section p {
+    margin: 0;
+    color: #9e8862; 
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.info-section p.value {
+    color: #e3940b; 
+    font-size: 18px;
+    margin-top: 4px;
+}
+
+.info-section hr {
+    width: 100%;
+    max-width: 45px;
+    margin: 4px 0;
+    border: 0;
+    border-top: 1px solid #121212;
+}
+
+.wine-description{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  background: rgba(0,0,0,0.75);
+  color: #9e8862;
+  font-family: "Iosevka Charon", monospace;
+  font-weight: 100;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  padding: 10px;
+  box-sizing: border-box;
+
+  transform: translateY(100%);
+  transition: transform 0.35s ease;
+}
+
+.wine-card:hover .wine-description{
+  transform: translateY(0);
+}
+
+.wine-card:hover .wine-description span{
+  color: #fff;
+}
+
+#nendivi1 { 
+    background-image: url("/Images/Kallmet.png"); 
+}
+
+#nendivi2 { 
+    background-image: url("/Images/Rose.png"); 
+}
+
+#nendivi3 { 
+    background-image: url("/Images/Vranc\ 2019.png"); 
+}
+
+#nendivi4 { 
+    background-image: url("/Images/Vranc.png"); 
+}
+
+#nendivi5 { 
+    background-image: url("/Images/Vranc.png"); 
+}
+
+#nendivi6 { 
+    background-image: url("/Images/Vranc.png"); 
+}
+
+#nendivi7 { 
+    background-image: url("/Images/Chardonnay2.png"); 
+}
+
+#nendivi8 { 
+    background-image: url("/Images/Chardonnay2.png"); 
+}
+
+#nendivi9 { 
+    background-image: url("/Images/Grand\ Rahova.png"); 
+}
+
+#nendivi10 { 
+    background-image: url("/Images/Grand\ Raova.png"); 
+}
+
+#nendivi11 { 
+    background-image: url("/Images/Bucina\ 2021.png"); 
+}
+
+#nendivi12 { 
+    background-image: url("/Images/Bucina\ 2023.png"); 
+}
+
+#nendivi13 { 
+    background-image: url("/Images/Cabernet.png"); 
+}
+
+#nendivi14{ 
+    background-image: url("/Images/Rahova\ 2.png"); 
+}
+
+#nendivi15 { 
+    background-image: url("/Images/Rahova\ 2.png"); 
+}
+
+#nendivi16{ 
+    background-image: url("/Images/Votra\ 2.png"); 
+}
+
+#nendivi17 { 
+    background-image: url("/Images/Rahova\ Raki.png"); 
+}
+
+footer {
+    width: 100%;
+    height: 340px;
+    background-color: #121212;
+    font-family: "Truculenta", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 20px;
+    margin-top: 20px;
+    box-sizing: border-box;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 0 80px; 
+}
+
+.bottom-left {
+    display: flex;
+    gap: 40px; 
+}
+
+#Privacy, #Returns, #V2025 {
+    font-size: 30px;
+    color: whitesmoke;
+    margin: 0; 
+}
+
+#Quote {
+    text-align: center;
+    font-size: 50px;
+    color: whitesmoke;
+    margin-bottom: 20px;
+}
+
+#Spam {
+    text-align: center;
+    color: #9e8862;
+    font-size: 30px;
+    margin-bottom: 0;
+}
+
+#span1 {
+    color: #9e8862;
+}
+
+.gotop{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    bottom: 9px;
+    right: 20px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 70px;
+    color: #9e8862;
+    font-size: 30px;
+  }
+  
+  html{
+  scroll-behavior: smooth;
+  }
+
+  @media (hover: hover) and (pointer: fine) {
+    .dropdown:hover .dropdown-content,
+    .dropdown:focus-within .dropdown-content {
+        display: block;
+    }
+}
+
+@media (max-width: 1024px) {
+    body{
+        background-size: cover;
+    }
+
+    .grid-container {
+        /* Drop to 2 columns instead of 4 */
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 100%;
+        padding: 0 20px;
+    }
+
+    .navbar-menu li {
+        left: 0; /* Resets the 300px offset you have in desktop */
+    }
+}
+
+/* --- Mobile Landscape (max-width: 768px) --- */
+@media (max-width: 768px) {
+    .navbar-container {
+        padding: 0 15px;
+        justify-content: space-between;
+    }
+
+    .navbar-menu {
+        display: none; /* Usually hidden behind a hamburger menu on mobile */
+    }
+
+    .footer {
+        height: auto;
+        padding: 40px 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    /* Resetting your relative positioning so text stays on screen */
+    #Privacy, #Returns, #V2025, #Quote, #Spam {
+        position: static;
+        margin: 10px 0;
+        left: 0;
+        top: 0;
+        font-size: 24px;
+    }
+}
+
+/* --- Small Mobile (max-width: 480px) --- */
+@media (max-width: 480px) {
+    .grid-container {
+        /* Single column for narrow screens */
+        grid-template-columns: 1fr;
+        margin-top: 80px;
+    }
+
+    .info-grid {
+        /* Make the Year, Order, Price stack if the screen is too narrow */
+        grid-template-columns: 1fr;
+        gap: 10px;
+        justify-items: center;
+    }
+
+    .item-left, .item-right {
+        text-align: center;
+    }
+
+    #image1 {
+        height: 40px;
+    }
+
+    .navbar-icons img {
+        width: 25px;
+        height: 25px;
+    }
+}
+
+.navbar-toggle {
+    display: none;
+}
+
+@media (max-width: 900px) {
+
+.navbar-container{
+    display:flex;
+    align-items:center;
+    width:100%;
+    padding:0 20px;
+}
+
+/* hamburger button */
+.navbar-toggle{
+    margin-left:auto;
+    display:block;
+    cursor:pointer;
+    background:none;
+    margin-left: auto;
+    border:none;
+    z-index:1100;
+}
+
+/* hamburger icon */
+.hamburger{
+    display:flex;
+    flex-direction:column;
+    gap:5px;
+}
+
+.navbar-menu li,
+.navbar-icons{
+    display:none;
+}
+
+.navbar-menu.active li{
+    display:flex;
+}
+
+.navbar-menu.active .navbar-icons{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+}
+
+/* hidden menu */
+.navbar-menu{
+    display:none;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    gap:6px;
+    position:absolute;
+    top:100px;
+    left:0;
+    width:100%;
+    background:#121212;
+    padding:20px 0;
+}
+
+/* show menu */
+.navbar-menu.active{
+    display:flex;
+}
+
+.navbar-toggle.active{
+    display: flex;
+}
+
+.navbar-menu li{
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    gap: 5px;
+}
+
+.navbar-menu a,
+.dropdown-button{
+    text-align:center;
+    font-size:20px;
+    padding:12px 0;
+    gap: 5px;
+}
+
+/* icons row at bottom */
+.navbar-icons{
+    display:none;
+    justify-content:center;
+    gap:20px;
+    padding:20px 0;
+}
+
+/* dropdown fix for mobile */
+.dropdown-content{
+    position:static;
+    width:100%;
+    background-color:#fff;
+    box-shadow:none;
+    gap: 5px;
+}
+
+}
