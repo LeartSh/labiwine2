@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search</title>
+    <link rel="stylesheet" href="search.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Truculenta:opsz,wght@12..72,100..900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/04a20985c0.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+   <div class="navbar">
+        <div class="navbar-container">
+          <a href="../index.html"><img id="image1" src="/Images/Labi wine logo.png" alt="Labi wine"></a>
+            <ul class="navbar-menu">
+                <li><a href="../index.html" id="li1">Home</a></li>
+                <li class="dropdown">
+                   <a href="/vreshtat/Vreshtat.html"><button class="dropdown-button">Wineyards</button></a> 
+                    <div class="dropdown-content">
+                        <a href="/galeria/galeria.html">Gallery</a>
+                        <a href="/galeria/certificates.html">Certificates</a>
+                    </div>
+                </li>
+                <li><a href="/history/history.html" id="li2">History</a></li>
+                <li><a href="/shop/shop.html" id="li3">Shop</a></li>
+                <li><a href="/contact/contact.html" id="li4">Contact</a></li>
+            </ul>
+            <div class="navbar-icons">
+                <a href="/search/search.html"><img id="icon1" src="/Images/icons8-search-100.png" alt=""></a>
+                <a href="/login/login.html"><img id="icon2" src="/Images/icons8-user-100.png" alt=""></a>
+                <a href="/shop/shop.html"><img id="icon3" src="/Images/icons8-shop-100.png" alt=""></a>
+            </div>
+        </div>
+
+        <button class="menu-toggle" onclick="toggleMenu()" aria-label="Open menu">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <nav id="menu">
+            <a href="../index.html">Home</a>
+            <div class="mobile-dropdown">
+                <a href="/vreshtat/Vreshtat.html">Wineyards</a>
+                <a href="/galeria/galeria.html">Gallery</a>
+                <a href="/galeria/certificates.html">Certificates</a>
+            </div>
+            <a href="/history/history.html">History</a>
+            <a href="/shop/shop.html">Shop</a>
+            <a href="/contact/contact.html">Contact</a>
+
+            <div class="mobile-icons">
+                <a href="/search/search.html"><img src="/Images/icons8-search-100.png" alt="Search"></a>
+                <a href="/login/login.html"><img src="/Images/icons8-user-100.png" alt="Login"></a>
+                <a href="/shop/shop.html"><img src="/Images/icons8-shop-100.png" alt="Shop"></a>
+            </div>
+        </nav>
+    </div>
+    
+    <div class="page-content">
+    <search class="Searchcontainer">
+        <input type="search" placeholder="Search Wines Here" class="search">
+    </search>
+    </div>
+    
+      <!-- Footer -->
+    <footer id="footer">
+    <p id="Spam">Labi wine</p>
+    <p id="Quote">A poem in every bottle</p>
+
+    <div class="footer-bottom">
+        <div class="bottom-left">
+            <a href="../index.html"><h3 id="Returns">Returns</h3></a>
+            <h3 id="Privacy">Privacy Policy</h3>
+        </div>
+        <div class="bottom-right">
+            <p id="V2025">2025 <span id="span1">designed by Leart Shulina</span></p>
+        </div>
+    </div>
+</footer>
+<script>
+function toggleMenu() {
+    const menu = document.getElementById('menu');
+    menu.classList.toggle('show');
+}
+</script>
+</body>
+</html>
